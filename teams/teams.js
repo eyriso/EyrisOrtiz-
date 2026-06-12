@@ -27,7 +27,12 @@ async function createTeam (event) {
 
         alert("Team created successfully");
 
-    } 
+    } catch (error) {
+
+        console.error(error);
+
+        alert("Error creating team");
+    }
 
     }
 
