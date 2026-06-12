@@ -8,7 +8,7 @@ document
 .addEventListener("submit, createTeam");
 
 async function createTeam (event){
-    event.preventDefault();
+    event.preventDefault();git
 
     const name = 
     document.getElementByID("name").value;
