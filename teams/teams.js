@@ -7,7 +7,7 @@ document
 .getElementByID("teamForm")
 .addEventListener("submit, createTeam");
 
-async function createTeam (event){
+async function createTeam (event) {
     event.preventDefault();git
 
     const name = 
@@ -19,5 +19,17 @@ async function createTeam (event){
     const teamRequest = 
     new TeamRequest(name, description);
 
-}
+    try {
+        const team = 
+        await teamsService.create(TeamRequest);
+        
+        console.log(team);
+
+        alert("Team created successfully");
+
+    } 
+
+    }
+
+
     
